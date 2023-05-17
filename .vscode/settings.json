@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
-        "lesson2"
+        "lesson2",
+        "lesson3/src/main/java/ru/geekbrains"
     ]
 }
