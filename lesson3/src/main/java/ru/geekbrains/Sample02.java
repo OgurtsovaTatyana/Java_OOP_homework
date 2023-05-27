@@ -1,4 +1,4 @@
-//package ru.geekbrains;
+package ru.geekbrains;
 
 import java.util.Arrays;
 import java.util.Comparator;

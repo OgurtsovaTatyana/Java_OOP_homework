@@ -20,9 +20,9 @@ public class Main {
 //     cats.add(cat4);
 
        for (Cat cat : arrCats) {
-        cat.eat(plate.getFood(),plate);
+        //cat.eat(plate.getFood(),plate);
        } 
-cat3.eat(plate.getFood(),plate);
+//cat3.eat(plate.getFood(),plate);
       plate.info();
     }  
 }
