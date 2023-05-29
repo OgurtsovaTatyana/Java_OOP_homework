@@ -1,8 +1,9 @@
 {
     "java.project.sourcePaths": [
+        "lesson4",
         "lesson3/src/main/java/ru/geekbrains",
         "lesson2",
-        "lesson4"
+        ""
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }
