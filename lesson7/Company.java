@@ -1,5 +1,7 @@
 package lesson7;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class Company implements CreateVacancy{
@@ -8,6 +10,7 @@ public class Company implements CreateVacancy{
     private String nameCompany;
     private double maxSalary; // макс зарплата
     private Publisher jobAgency; //агенство Publisher- интерфейс
+    private String [] ListProfession =new String []{"Администратор","Student","Master"} ;
     
     public Company(String nameCompany, double maxSalary, Publisher jobAgency) {
         this.nameCompany = nameCompany;
@@ -30,6 +33,7 @@ public class Company implements CreateVacancy{
         double salary = random.nextDouble(3000, maxSalary);
         jobVacancy.companyName=nameCompany;
         jobVacancy.salary=salary;
+        jobVacancy.typeProfession=ListProfession[random.nextInt(2)];
         return jobVacancy;
         }
 

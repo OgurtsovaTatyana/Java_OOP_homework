@@ -3,7 +3,7 @@ package lesson7;
 public class JobVacancy {
     public String companyName;
     public double salary;    
-   // public String typeProfession;
+    public String typeProfession;
   
 
    public JobVacancy (){ 
