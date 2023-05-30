@@ -6,16 +6,17 @@ public class Student extends Profession implements Observer {
     public Student(String name) {
         super(name);
         salary = 5000;
+        typeProfession ="Student";
     }
 
     @Override
-    public void receiveOffer(String companyName, double salary) {
-        if (this.salary < salary){
-            System.out.printf("Студент %s >>> Мне нужна эта работа! [%s - %f]\n", name, companyName, salary);
-            this.salary = salary;
+    public void receiveOffer(JobVacancy jobVacancy) {
+        if (this.salary < jobVacancy.salary){
+            System.out.printf("Студент %s >>> Мне нужна эта работа! [%s - %f]текущая зарплата: %f \n", name, jobVacancy.companyName,jobVacancy.salary, salary);
+            this.salary = jobVacancy.salary;
         }
         else {
-            System.out.printf("Студент %s >>> Я найду работу получше! [%s - %f]\n", name, companyName, salary);
+            System.out.printf("Студент %s >>> Я найду работу получше! [%s - %f]текущая зарплата: %f \n", name, jobVacancy.companyName,jobVacancy.salary, salary);
         }
     }
 }

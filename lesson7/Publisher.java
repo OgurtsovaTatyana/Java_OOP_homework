@@ -6,6 +6,6 @@ public interface Publisher {
 
     void removeObserver(Observer observer); //удалить соискателя
 
-    void sendOffer(String nameCompany, double salary);// предложение о работе 
+    void sendOffer(JobVacancy jobVacancy);// предложение о работе 
 
 }
