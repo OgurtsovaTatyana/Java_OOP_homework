@@ -1,7 +1,7 @@
 package lesson6.task2_Report;
 import java.util.ArrayList;
 import java.util.List;
-import lesson6.task2_Report.PrintAll;
+//import lesson6.task2_Report.PrintAll;
 public class Report {
     
     private List<ReportItem> items; // Отчетные данные
@@ -13,9 +13,12 @@ public class Report {
             items.add(new ReportItem("Second", (float)6));
         }
     
-        public void outputReport(){
-            
-        }
-    
+     
+            public void output(Print print){
+                
+                print.outputReport(items);
+            }
+      
+
     
 }

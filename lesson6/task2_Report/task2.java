@@ -5,6 +5,10 @@ public class task2 {
     public static void main(String[] args) {
             Report report = new Report();
             report.calculate();
-            report.output();
+            Print saveToFile = new SaveToFile();
+            Print printReport = new PrintReport();
+
+            report.output(saveToFile);
+            report.output(printReport);
     }
 }

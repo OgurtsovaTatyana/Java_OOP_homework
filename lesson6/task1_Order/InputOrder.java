@@ -14,5 +14,8 @@ public class InputOrder{
         Scanner in = new Scanner(System.in);
         System.out.print(message);
         return in.nextLine();
+        
     }
+
+    
 }
